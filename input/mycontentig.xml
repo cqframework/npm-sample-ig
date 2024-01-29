@@ -62,76 +62,6 @@
       <name value="Common Logic Libraries" />
     </grouping>
     <!-- Device -->
-    <resource>
-      <reference>
-        <reference value="Device/cqf-tooling" />
-        <display value="CQF Tooling Device" />
-      </reference>
-      <name value="CQFToolingDevice" />
-      <description value="A Device that represents a CQF Tooling version." />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Library/FHIRHelpers" />
-        <display value="FHIR Helpers Library" />
-      </reference>
-      <name value="FHIRHelpers" />
-      <description value="FHIR Helpers Library" />
-      <exampleBoolean value="false" />
-      <groupingId value="common-libraries" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Questionnaire/phq-9-questionnaire" />
-        <display value="Patient Health Questionnaire (PHQ-9)" />
-      </reference>
-      <name value="Patient Health Questionnaire (PHQ-9)" />
-      <description value="Patient Health Questionnaire (PHQ-9)" />
-      <exampleBoolean value="false" />
-    </resource>
-    
-    <page>
-      <!-- The root will always be toc.html - the template will force it if you don't do it -->
-      <nameUrl value="toc.html"/>
-      <title value="Table of Contents"/>
-      <generation value="html"/>
-      <page>
-        <nameUrl value="index.html"/>
-        <title value="MyContentIG Home Page"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="spec.html"/>
-        <title value="Detailed Specification"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="license.html"/>
-        <title value="License"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="changes.html"/>
-        <title value="IG Change History"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="examples.html"/>
-        <title value="Examples"/>
-        <generation value="markdown"/>
-      </page>
-    </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
@@ -148,23 +78,11 @@
     </parameter>
     <parameter>
       <code value="path-resource" />
-      <value value="input/resources/device"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
       <value value="input/resources/library"/>
     </parameter>
     <parameter>
       <code value="path-resource" />
       <value value="input/resources/measure"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/resources/questionnaire"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/vocabulary/valueset"/>
     </parameter>
     <!-- This parameter indicates to the publisher that it should translate and package CQL libraries. See the example library resources for more -->
     <!-- This is disabled for now because the CQF Tooling has more up-to-date CQL processing than the publisher. Run refresh to update IG resources
@@ -173,14 +91,7 @@
       <value value="input/cql"/>
     </parameter>
     -->
-    <parameter>
-      <code value="path-liquid"/>
-      <value value="templates/liquid"/>
-    </parameter>
-    <parameter>
-      <code value="path-suppressed-warnings"/>
-      <value value="input/ignoreWarnings.txt"/>
-    </parameter>
+
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
       <code value="excludexml"/>

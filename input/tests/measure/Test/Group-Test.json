@@ -1,0 +1,27 @@
+{
+  "resourceType": "Group",
+  "id": "Test",
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/artifact-testArtifact",
+    "valueCanonical": "http://ecqi.healthit.gov/ecqms/Measure/Test"
+  } ],
+  "active": true,
+  "type": "person",
+  "actual": true,
+  "member": [ {
+    "entity": {
+      "reference": "Patient/example",
+      "display": "Peter James Chalmers"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/example2",
+      "display": "Peter James Chalmers"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/example",
+      "display": "Peter James Chalmers"
+    }
+  } ]
+}
