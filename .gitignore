@@ -28,3 +28,7 @@ Thumbs.db
 *.bak
 
 node_modules
+
+build
+dist
+bundles

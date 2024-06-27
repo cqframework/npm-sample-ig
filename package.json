@@ -1,12 +1,30 @@
 {
-  "name": "sample-content-ig-npm",
-  "version": "1.0.0",
-  "description": "A sample, template-driven content implementation guide that provides an illustration of a content IG, with examples of using CQL with FHIR libraries and vocabulary. A content IG is one that includes computable representations of clinical knowledge artifacts as FHIR Resources, specifically Library, ActivityDefinition, PlanDefinition, and Measure resources.",
+  "name": "@smile-digital-health/sample-content-ig-npm",
+  "version": "0.1.0",
+  "canonical": "http://alphora.github.io/sample-content-ig-npm",
+  "url": "http://alphora.com/sample-content-ig-npm",
+  "title": "SDH Test IG",
+  "description": "Test IG for Smile Digital Health",
+  "fhirVersions": [
+      "4.0.1"
+  ],
+  "dependencies": {
+      "fhir.cqf.common": "^4.0.1",
+      "hl7.fhir.core": "^4.0.1"
+  },
   "devDependencies": {
-    "@cqframework/cqf-tooling": "^3.1.0-1"
+      "@smile-digital-health/cqf-tooling": "3.4.0-1"
   },
+  "keywords": [
+      "FHIR"
+  ],
   "scripts": {
-    "refresh": "cqf-tooling -RefreshIG -ini=ig.ini -d -p -t"
+    "prepare": "npm run build",
+    "build": "npm run refresh && npm run test",
+    "test": "echo \"No tests yet... Need a 'cqf-tooling test' command\"", 
+    "refresh": "cqf-tooling -RefreshIG -d -p -t -ini=ig.ini",
+    "prepack": "echo \"No package script yet... Need a 'cqf-tooling pack' command to create a final folder in npm format (or use the publisher)\""
   },
-  "license": "Apache-2.0"
+  "author": "Smile Digital Health",
+  "license": "UNLICENSED"
 }
