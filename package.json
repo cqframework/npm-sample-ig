@@ -9,7 +9,6 @@
       "4.0.1"
   ],
   "dependencies": {
-      "fhir.cqf.common": "^4.0.1",
       "hl7.fhir.core": "^4.0.1"
   },
   "devDependencies": {
