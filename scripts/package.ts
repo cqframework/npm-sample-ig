@@ -19,10 +19,6 @@ const jsonFiles = files.filter(file => path.extname(file) === '.json').filter(fi
 
 var fileMetas = new Array<FileMeta>();
 
-
-fs.rmdirSync(outputDir, { recursive: true });
-fs.mkdirSync(outputDir, { recursive: true });
-
 // Read each JSON file and add it to the index entry
 jsonFiles.forEach(file => {
     const data = fs.readFileSync(path.join(inputDir, file), 'utf8');

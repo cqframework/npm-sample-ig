@@ -13,7 +13,7 @@
             "cwd": "${workspaceFolder}",
             "stopOnEntry": false,
             "watchMode": false,
-            "args": ["input/resources", "dist"]
+            "args": ["input/resources", "./"]
         },
         {
             "type": "bun",
@@ -24,7 +24,7 @@
             "cwd": "${workspaceFolder}",
             "noDebug": true,
             "watchMode": false,
-            "args": ["input/resources", "dist"]
+            "args": ["input/resources", "./"]
         },
         {
             "type": "bun",

@@ -8,9 +8,6 @@
   "fhirVersions": [
     "4.0.1"
   ],
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "hl7.fhir.core": "^4.0.1"
   },
@@ -27,7 +24,7 @@
     "prepare": "npm run refresh && npm run test",
     "test": "echo \"No tests yet... Need a 'cqf-tooling test' command\"",
     "refresh": "cqf-tooling -RefreshIG -d -p -t -ini=ig.ini",
-    "prepack": "bun scripts/package.ts ./input/resources ./dist"
+    "prepack": "bun scripts/package.ts ./input/resources ./"
   },
   "author": "Smile Digital Health",
   "license": "UNLICENSED"
