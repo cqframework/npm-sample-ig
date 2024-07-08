@@ -1,4 +1,7 @@
 bundles
 input
 package
-distc
+dist
+scripts
+.vscode
+ig.ini
